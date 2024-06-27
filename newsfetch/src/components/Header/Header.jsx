@@ -7,7 +7,7 @@ function Header() {
             <nav className="bg-gray-200 border-gray-200 px-4 lg:px-6 py-2.5">
                 <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
                     <Link to="/" className="flex items-center">
-                        <img className='rounded-3xl w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28'
+                        <img className='rounded-3xl w-12 h-12 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20'
                             src={Logo}
                             alt="Logo"
                         />

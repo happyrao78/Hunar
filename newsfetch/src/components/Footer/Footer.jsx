@@ -4,13 +4,13 @@ import Logo from '../../assets/image.png'
 const Footer = () => {
   return (
     <footer className="bg-gray-200 border-y">
-            <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 transparent">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
                             <img
                                 src={Logo}
-                                className="rounded-3xl mr-3  w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28"
+                                className="rounded-3xl w-12 h-12 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20"
                                 alt="Logo"
                             />
                         </Link>
