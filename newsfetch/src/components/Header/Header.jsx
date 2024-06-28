@@ -57,7 +57,7 @@ function Header() {
                   News
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   to="/newsdetail"
                   className={({ isActive }) =>
@@ -68,7 +68,7 @@ function Header() {
                 >
                   News Detail
                 </NavLink>
-              </li>
+              </li> */}
               <li>
                 <NavLink
                   to="/about"

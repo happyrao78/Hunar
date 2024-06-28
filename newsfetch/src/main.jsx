@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Layout from './Layout'
 import { Route } from 'react-router-dom'
-import About from './components/About/About'
+import About , {githubInfoLoader}from './components/About/About'
 import TrendingNews from './components/TrendingNews/TrendingNews'
 import Contact from './components/Contact/Contact'
 import NewsDetail from './components/NewsDetail/NewsDetail'
@@ -16,7 +16,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout />}>
     <Route path='' element={<TrendingNews />} />
     <Route path='newsdetail' element={<NewsDetail />} />
-    <Route path='about' element={<About />} />
+    <Route loader={githubInfoLoader} path='about' element={<About />} />
     <Route path='contact' element={<Contact />} />
 
       

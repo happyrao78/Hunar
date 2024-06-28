@@ -22,6 +22,9 @@ function TrendingNews() {
   const handleReadMore = (article) => {
     navigate('/newsdetail', { state: { article } });
   };
+  const getFirstWords = (text, wordCount) => {
+    return text.split(" ").slice(0, wordCount).join(" ");
+  }
 
   return (
     <div className="p-5 bg-gray-200 text-center text-5xl mx-auto flex flex-col items-center">
@@ -36,12 +39,15 @@ function TrendingNews() {
                 alt={article.title}
               />
               <div className="px-4 py-4">
-                <div className="font-bold text-lg mb-2">{article.title}</div>
-                <p className="text-gray-700 text-base line-clamp-3">
+              <div className="font-bold text-lg mb-2">
+      {getFirstWords(article.title, 10)}
+    </div>
+                {/* <div className="font-bold text-lg mb-2">{article.title}</div> */}
+                {/* <p className="text-gray-700 text-base line-clamp-3">
                   {article.description}
-                </p>
+                </p> */}
               </div>
-              <div className="px-4 pt-4 pb-2 text-center">
+              <div className="px-4 pt-2 pb-2 text-center">
                 <button
                   onClick={() => handleReadMore(article)}
                   className="inline-block bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full transition duration-300 ease-in-out transform hover:scale-105 text-sm"
