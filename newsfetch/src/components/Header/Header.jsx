@@ -9,13 +9,13 @@ function Header() {
     <header className="shadow sticky z-50 top-0 bg-gray-400">
       <nav className="border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link to="/" className="flex items-center">
+          <NavLink to="/" className="flex items-center">
             <img
               className="rounded-3xl w-12 h-12 sm:w-10 sm:h-10 md:w-15 md:h-15 lg:w-20 lg:h-20"
               src={Logo}
               alt="Logo"
             />
-          </Link>
+          </NavLink>
           <div className="flex items-center lg:order-2">
             <Link
               to="#"
