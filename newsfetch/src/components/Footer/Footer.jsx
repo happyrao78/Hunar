@@ -3,7 +3,7 @@ import {Link, NavLink} from 'react-router-dom'
 import Logo from '../../assets/image.png'
 const Footer = () => {
   return (
-    <footer className="bg-gray-200 border-y">
+    <footer className="bg-gray-400 border-y">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8 transparent">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
@@ -17,20 +17,28 @@ const Footer = () => {
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
-                            <ul className="text-gray-500 font-medium">
+                            <h2 className="mb-6 text-xl font-semibold text-gray-900 uppercase">Resources</h2>
+                            <ul className="text-black font-medium">
                                 <li className="mb-4">
                                     <NavLink to="/" className={({isActive})=>`
                                 ${isActive ? 'text-orange-700' :
-                                'text-gray-700' }
+                                'text-black' }
                                 hover:underline`}>
                                         News
+                                    </NavLink>
+                                </li>
+                                <li className="mb-4">
+                                    <NavLink to="NewsDetail" className={({isActive})=>`
+                                ${isActive ? 'text-orange-700' :
+                                'text-black' }
+                                hover:underline`}>
+                                        News Detail
                                     </NavLink>
                                 </li>
                                 <li className='mb-4'>
                                     <NavLink to="about" className={({isActive})=>`
                                 ${isActive ? 'text-orange-700' :
-                                'text-gray-700' }
+                                'text-black' }
                                 hover:underline`}>
                                         About
                                     </NavLink>
@@ -38,7 +46,7 @@ const Footer = () => {
                                 <li className='mb-4'>
                                     <NavLink to="contact" className={({isActive})=>`
                                 ${isActive ? 'text-orange-700' :
-                                'text-gray-700' }
+                                'text-black' }
                                 hover:underline`}>
                                         Contact
                                     </NavLink>
@@ -46,8 +54,8 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
-                            <ul className="text-gray-500 font-medium">
+                            <h2 className="mb-6 text-xl font-semibold text-gray-900 uppercase">Follow us</h2>
+                            <ul className="text-black font-medium">
                                 <li className="mb-4">
                                     <a
                                         href="https://github.com/happyrao78"
@@ -66,8 +74,8 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div>
-                            <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-                            <ul className="text-gray-500 font-medium">
+                            <h2 className="mb-6 text-xl font-semibold text-gray-900 uppercase">Legal</h2>
+                            <ul className="text-black font-medium">
                                 <li className="mb-4">
                                     <Link to="#" className="hover:underline">
                                         Privacy Policy
@@ -84,7 +92,7 @@ const Footer = () => {
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-gray-500 sm:text-center">
+                    <span className="text-sm text-black sm:text-center text-center mx-auto">
                         © 2023
                         <a href="#" className="hover:underline">
                             News Mania
@@ -92,7 +100,7 @@ const Footer = () => {
                         . All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
-                        <Link to="#" className="text-gray-500 hover:text-gray-900">
+                        <Link to="#" className="text-black hover:text-gray-900">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -108,7 +116,7 @@ const Footer = () => {
                             </svg>
                             <span className="sr-only">Facebook page</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-black">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -120,7 +128,7 @@ const Footer = () => {
                             </svg>
                             <span className="sr-only">Discord community</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-black">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -136,7 +144,7 @@ const Footer = () => {
                             </svg>
                             <span className="sr-only">Twitter page</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-black">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"
@@ -152,7 +160,7 @@ const Footer = () => {
                             </svg>
                             <span className="sr-only">GitHub account</span>
                         </Link>
-                        <Link to="#" className="text-gray-500">
+                        <Link to="#" className="text-black">
                             <svg
                                 className="w-4 h-4"
                                 aria-hidden="true"

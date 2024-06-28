@@ -24,7 +24,7 @@ function TrendingNews() {
   };
 
   return (
-    <div className="p-5 bg-green-100 text-center text-5xl mx-auto flex flex-col items-center">
+    <div className="p-5 bg-gray-200 text-center text-5xl mx-auto flex flex-col items-center">
       <h1 className="text-white mb-8 bg-green-900 rounded-xl p-4">Top 10 Business News from India</h1>
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
