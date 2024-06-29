@@ -1,1 +1,1 @@
-# The News Mania
+# Samachar Kendra
