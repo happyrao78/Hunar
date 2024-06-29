@@ -5,9 +5,27 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <script defer src="/__/firebase/10.12.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.12.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.12.2/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- <script src="../newsfetch/src/components/Header/auth.js" type="module" defer></script> -->
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="./src/main.jsx"></script>
+    
   </body>
 </html>
