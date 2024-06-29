@@ -5,7 +5,11 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   server:{
     proxy:{
-      '/api': 'https://newsapi.org/'
+      '/api': {
+        target: 'https://newsapi.org/',
+        changeOrigin: true,
+        pathRewrite: { '^/api': '' },
+      }
     }
   },
   plugins: [react()],
