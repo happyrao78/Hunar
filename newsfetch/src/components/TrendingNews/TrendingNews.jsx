@@ -12,7 +12,7 @@ function TrendingNews() {
     axios.get(`/api/news`)
       .then(response => {
         // console.log(response.data);
-        const filteredNews = response.data.articles.filter(article => article.source.id === 'the-times-of-india' || article.source.id === 'google-news');
+        const filteredNews = response.data.articles.filter(article => article.source.id === 'the-times-of-india' ||  'google-news');
         setNews(filteredNews.slice(0, 10));
       })
       .catch(error => {
