@@ -8,7 +8,7 @@ export default defineConfig({
       '/api': {
         target: 'https://newsapi.org/',
         changeOrigin: true,
-        pathRewrite: { '^/api': '' },
+        rewrite: (path) => path.replace(/^\/api/, ''),
       }
     }
   },
