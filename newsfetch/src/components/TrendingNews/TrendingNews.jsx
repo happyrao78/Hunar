@@ -8,10 +8,11 @@ function TrendingNews() {
   const defaultImage = 'https://via.placeholder.com/300x200?text=No+Image';
 
   useEffect(() => {
-    axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=74816c3690434f50b56a475c71cd3b56`)
+    // https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=74816c3690434f50b56a475c71cd3b56
+    axios.get(`/api/news`)
       .then(response => {
         // console.log(response.data);
-        const filteredNews = response.data.articles.filter(article => article.source.id === 'the-times-of-india' ||  'google-news');
+        const filteredNews = response.data.articles.filter(article => article.source.id === 'the-times-of-india' || article.source.id === 'google-news');
         setNews(filteredNews.slice(0, 10));
       })
       .catch(error => {
