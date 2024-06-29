@@ -27,14 +27,14 @@ const Footer = () => {
                                         News
                                     </NavLink>
                                 </li>
-                                <li className="mb-4">
+                                {/* <li className="mb-4">
                                     <NavLink to="NewsDetail" className={({isActive})=>`
                                 ${isActive ? 'text-orange-700' :
                                 'text-black' }
                                 hover:underline`}>
                                         News Detail
                                     </NavLink>
-                                </li>
+                                </li> */}
                                 <li className='mb-4'>
                                     <NavLink to="about" className={({isActive})=>`
                                 ${isActive ? 'text-orange-700' :
