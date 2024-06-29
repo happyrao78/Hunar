@@ -3,6 +3,8 @@ import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import {Outlet} from 'react-router-dom'
 import AnimatedCursor from "react-animated-cursor"
+import Preloader from './components/Preloader/Preloader'
+
 function Layout() {
   return (
     <>
@@ -27,6 +29,7 @@ function Layout() {
           'button',
           '.link'
         ]} />
+        <Preloader />
         <Header />
         <Outlet />
         <Footer />

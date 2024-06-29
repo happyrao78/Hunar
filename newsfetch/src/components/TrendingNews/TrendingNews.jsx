@@ -2,8 +2,12 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
+
 function TrendingNews() {
   const [news, setNews] = useState([]);
+  const info={
+headline : "Top Business Headlines",
+  }
   const navigate = useNavigate();
   const defaultImage = 'https://via.placeholder.com/300x200?text=No+Image';
 
@@ -29,11 +33,16 @@ function TrendingNews() {
 
   return (
     <div className="p-5 bg-gray-200 text-center text-5xl mx-auto flex flex-col items-center">
-      <h1 className="text-white mb-8 bg-green-900 rounded-xl p-4">Top 10 Business News from India</h1>
+      {/* <h1 className="text-black mb-8 bg-red-400 shadow-lg rounded-lg p-4 animate-pulse  opacity-100"
+      >{info.headline.toUpperCase()}</h1> */}
+      <h1 className="relative text-black mb-8 shadow-lg rounded-lg p-4 overflow-hidden">
+  <span className="absolute inset-0 bg-red-400 animate-pulse opacity-75 rounded-lg"></span>
+  <span className="relative">{info.headline.toUpperCase()}</span>
+</h1>
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="flex flex-col items-center md:grid md:grid-cols-3 lg:grid-cols-4 gap-6  ">
           {news.map((article, index) => (
-            <div key={index} className="max-w-xs rounded-2xl overflow-hidden shadow-lg bg-white">
+            <div key={index} className="max-w-xs rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
               <img
                 className="w-full h-40 object-cover"
                 src={article.urlToImage || defaultImage}
