@@ -11,7 +11,7 @@ function NewsDetail() {
         <div className="max-w-3xl rounded-2xl overflow-hidden shadow-lg bg-white p-6">
           <img
             className="w-full h-64 object-cover mb-4"
-            src={article.urlToImage || 'https://via.placeholder.com/300x200?text=No+Image'}
+            src={article.urlToImage || 'https://yt3.googleusercontent.com/VbGkSvLpAmSOVxSQ-42YlR4uQjaRbADrBZ0Jbm8rpeI7RiFSEp2_8DJqzgqH4dWViwYOQy2QJnQ=s900-c-k-c0x00ffffff-no-rj'}
             alt={article.title}
           />
           <h1 className="font-bold text-3xl mb-4">{article.title}</h1>

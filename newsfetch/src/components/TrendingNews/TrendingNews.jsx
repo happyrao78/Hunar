@@ -9,15 +9,15 @@ function TrendingNews() {
 headline : "Top Business Headlines",
   }
   const navigate = useNavigate();
-  const defaultImage = 'https://via.placeholder.com/300x200?text=No+Image';
+  const defaultImage = 'https://yt3.googleusercontent.com/VbGkSvLpAmSOVxSQ-42YlR4uQjaRbADrBZ0Jbm8rpeI7RiFSEp2_8DJqzgqH4dWViwYOQy2QJnQ=s900-c-k-c0x00ffffff-no-rj';
 
   useEffect(() => {
     // https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=74816c3690434f50b56a475c71cd3b56
     axios.get(`https://backendserver-production-b03e.up.railway.app/api/news`)
       .then(response => {
         // console.log(response.data);
-        const filteredNews = response.data.articles.filter(article => article.source.id === 'the-times-of-india' ||  'google-news');
-        setNews(filteredNews.slice(0, 10));
+        const filteredNews = response.data.articles.filter(article => article.source.name === 'The Times of India' ||  'google-news');
+        setNews(filteredNews.slice(0, 20));
       })
       .catch(error => {
         console.error('Error fetching the news', error);

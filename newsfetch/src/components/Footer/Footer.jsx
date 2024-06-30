@@ -95,7 +95,7 @@ const Footer = () => {
                     <span className="text-sm text-black sm:text-center text-center mx-auto">
                         © 2024  
                         <a href="#" className="hover:underline">
-                            SamacharKendra
+                            NewsMania
                         </a>
                         . All Rights Reserved.
                     </span>
