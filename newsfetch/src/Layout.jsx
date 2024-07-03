@@ -1,11 +1,24 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import {Outlet} from 'react-router-dom'
 import AnimatedCursor from "react-animated-cursor"
 import Preloader from './components/Preloader/Preloader'
+import ThemeBtn from './components/Header/ThemeButton'
+import { ThemeProvider } from './components/Context/Theme'
 
 function Layout() {
+  const [themeMode,setThemeMode]= useState("light");
+  const lightTheme = ()=>{
+    setThemeMode('light')
+  }
+  const darkTheme= ()=>{
+    setThemeMode('dark')
+  }
+  useEffect(()=>{
+    document.querySelector('html').classList.remove("light","dark")
+    document.querySelector('html').classList.add(themeMode)
+  },[themeMode])
   return (
     <>
         <AnimatedCursor 
@@ -30,9 +43,14 @@ function Layout() {
           '.link'
         ]} />
         <Preloader />
+        {/* <Header /> */}
+        <ThemeProvider value={{themeMode, lightTheme,  darkTheme}}>
         <Header />
+        {/* <ThemeBtn /> */}
         <Outlet />
         <Footer />
+        </ThemeProvider>
+       
     </>
   )
 }

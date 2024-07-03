@@ -3,6 +3,8 @@ import { Link, NavLink } from 'react-router-dom';
 import Logo from '../../assets/image.png';
 import { auth, provider } from './FireBaseConfig';
 import { signInWithPopup, signOut } from 'firebase/auth';
+// import useTheme from '../Context/Theme';
+import ThemeBtn from './ThemeButton';
 // Adjust the path to your firebaseConfig.js
 
 function Header() {
@@ -66,12 +68,16 @@ function Header() {
               </>
             ) : (
               <>
+              <div className='p-4 '>
+                <ThemeBtn />
+              </div>
                 <button
                   onClick={handleLogin}
                   className="text-gray-800 hover:bg-gray-50 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg text-sm md:text-lg lg:text-xl px-2 md:px-4 py-1.5 md:py-2 lg:py-2.5 mr-1 md:mr-2 focus:outline-none"
                 >
                   Log in
                 </button>
+                
                 <Link
                   to="#"
                   className="text-white bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm md:text-lg lg:text-xl px-2 md:px-4 py-1.5 md:py-2 lg:py-2.5 mr-1 md:mr-2 focus:outline-none"
@@ -96,6 +102,7 @@ function Header() {
             id="mobile-menu-2"
           >
             <ul className="flex flex-col mt-4 font-medium lg:flex-row text-sm md:text-lg lg:text-xl lg:space-x-8 lg:mt-0">
+           
               <li>
                 <NavLink
                   to="/"

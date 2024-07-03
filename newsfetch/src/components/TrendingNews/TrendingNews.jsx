@@ -32,7 +32,7 @@ headline : "Top Business Headlines",
   }
 
   return (
-    <div className="p-5 bg-gray-200 text-center text-5xl mx-auto flex flex-col items-center">
+    <div className="p-5 bg-gray-200  text-center text-5xl mx-auto flex flex-col items-center">
       {/* <h1 className="text-black mb-8 bg-red-400 shadow-lg rounded-lg p-4 animate-pulse  opacity-100"
       >{info.headline.toUpperCase()}</h1> */}
       <h1 className="relative text-black mb-8 shadow-lg rounded-lg p-4 overflow-hidden">
@@ -42,7 +42,7 @@ headline : "Top Business Headlines",
       <div className="container mx-auto">
         <div className="flex flex-col items-center md:grid md:grid-cols-3 lg:grid-cols-4 gap-6  ">
           {news.map((article, index) => (
-            <div key={index} className="max-w-xs rounded-2xl overflow-hidden shadow-lg bg-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+            <div key={index} className="max-w-xs rounded-2xl overflow-hidden shadow-lg bg-white dark:bg-gray-800 dark:text-white transform transition duration-300 hover:scale-105 hover:shadow-2xl">
               <img
                 className="w-full h-40 object-cover"
                 src={article.urlToImage || defaultImage}

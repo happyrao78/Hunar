@@ -28,11 +28,11 @@ export default function Contact() {
 
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
-      <div className="w-full max-w-md bg-white rounded-lg shadow-lg p-8">
-        <h1 className="text-3xl font-bold mb-6 text-center">Contact Us</h1>
+      <div className="w-full max-w-md dark:bg-gray-800 bg-white rounded-lg shadow-lg p-8 dark:transition ease-in-out duration-500">
+        <h1 className="text-3xl font-bold mb-6 text-center dark:text-white ">Contact Us</h1>
         <form onSubmit={onSubmit} className="space-y-4">
           <div>
-            <label htmlFor="name" className="block text-lg font-medium text-gray-700">Name</label>
+            <label htmlFor="name" className="block text-lg font-medium text-gray-700 dark:text-gray-100">Name</label>
             <input
               type="text"
               name="name"
@@ -42,7 +42,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-lg font-medium text-gray-700">Email</label>
+            <label htmlFor="email" className="block text-lg font-medium text-gray-700 dark:text-gray-100">Email</label>
             <input
               type="email"
               name="email"
@@ -52,7 +52,7 @@ export default function Contact() {
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-lg font-medium text-gray-700">Message</label>
+            <label htmlFor="message" className="block text-lg font-medium text-gray-700 dark:text-gray-100">Message</label>
             <textarea
               name="message"
               id="message"
