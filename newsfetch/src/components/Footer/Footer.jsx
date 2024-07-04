@@ -100,9 +100,9 @@ const Footer = () => {
                         . All Rights Reserved.
                     </span>
                     <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0 ">
-                        <Link to="#" className="text-black dark:text-white hover:text-gray-900">
+                        {/* <Link to="#" className="text-black dark:text-white hover:text-gray-900">
                             <svg
-                                className="w-4 h-4"
+                                className="w-6 h-6"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -115,10 +115,10 @@ const Footer = () => {
                                 />
                             </svg>
                             <span className="sr-only">Facebook page</span>
-                        </Link>
-                        <Link to="#" className="text-black  dark:text-white">
+                        </Link> */}
+                        <Link to="https://discord.com/channels/@me" className="text-black  dark:text-white">
                             <svg
-                                className="w-4 h-4"
+                                className="w-6 h-6"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -128,9 +128,9 @@ const Footer = () => {
                             </svg>
                             <span className="sr-only">Discord community</span>
                         </Link>
-                        <Link to="#" className="text-black  dark:text-white">
+                        <Link to="https://twitter.com/rao_happy60490" className="text-black  dark:text-white">
                             <svg
-                                className="w-4 h-4"
+                                className="w-6 h-6"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -144,9 +144,9 @@ const Footer = () => {
                             </svg>
                             <span className="sr-only">Twitter page</span>
                         </Link>
-                        <Link to="#" className="text-black  dark:text-white">
+                        <Link to="https://www.github.com/happyrao78" className="text-black  dark:text-white">
                             <svg
-                                className="w-4 h-4"
+                                className="w-6 h-6"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -160,9 +160,9 @@ const Footer = () => {
                             </svg>
                             <span className="sr-only">GitHub account</span>
                         </Link>
-                        <Link to="#" className="text-black  dark:text-white">
+                        <Link to="https://www.happyrao.tech" className="text-black  dark:text-white">
                             <svg
-                                className="w-4 h-4"
+                                className="w-6 h-6"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
@@ -174,7 +174,7 @@ const Footer = () => {
                                     clip-rule="evenodd"
                                 />
                             </svg>
-                            <span className="sr-only">Dribbble account</span>
+                            <span className="sr-only">Website</span>
                         </Link>
                     </div>
                 </div>
