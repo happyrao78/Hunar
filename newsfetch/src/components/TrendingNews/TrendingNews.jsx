@@ -36,7 +36,7 @@ headline : "Top Business Headlines",
       {/* <h1 className="text-black mb-8 bg-red-400 shadow-lg rounded-lg p-4 animate-pulse  opacity-100"
       >{info.headline.toUpperCase()}</h1> */}
       <h1 className="relative text-black mb-8 shadow-lg rounded-lg p-4 overflow-hidden">
-  <span className="absolute inset-0 bg-red-400 animate-pulse opacity-75 rounded-lg"></span>
+  <span className="absolute inset-0 bg-red-400 dark:bg-blue-400 animate-pulse opacity-75 rounded-lg"></span>
   <span className="relative">{info.headline.toUpperCase()}</span>
 </h1>
       <div className="container mx-auto">
