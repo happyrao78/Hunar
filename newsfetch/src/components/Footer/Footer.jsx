@@ -1,6 +1,6 @@
 import React from 'react'
 import {Link, NavLink} from 'react-router-dom'
-import Logo from '../../assets/image.png'
+import Logo from '../../../public/logo.svg'
 const Footer = () => {
   return (
     <footer className="bg-gray-400 dark:bg-blue-950 border-y dark:transition ease-in-out duration-500">

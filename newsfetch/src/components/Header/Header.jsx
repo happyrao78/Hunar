@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import Logo from '../../assets/image.png';
+import Logo from '../../../public/logo.svg';
 import { auth, provider } from './FireBaseConfig';
 import { signInWithPopup, signOut } from 'firebase/auth';
 // import useTheme from '../Context/Theme';
@@ -81,8 +81,9 @@ function Header() {
                 <Link
                   to="#"
                   className="text-white dark:bg-blue-400 dark:hover:bg-blue-500 dark:transition ease-in-out duration-500 bg-orange-700 hover:bg-orange-800 focus:ring-4 focus:ring-orange-300 font-medium rounded-lg text-sm md:text-lg lg:text-xl px-2 md:px-4 py-1.5 md:py-2 lg:py-2.5 mr-1 md:mr-2 focus:outline-none"
+                  
                 >
-                  Get started
+                   Connect us
                 </Link>
               </>
             )}
