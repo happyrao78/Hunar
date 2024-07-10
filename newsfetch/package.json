@@ -25,7 +25,8 @@
     "react-router": "^6.24.0",
     "react-router-dom": "^6.24.0",
     "react-tilty": "^3.0.0",
-    "react-tsparticles": "^2.12.2"
+    "react-tsparticles": "^2.12.2",
+    "uuid": "^10.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",
