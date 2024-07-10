@@ -8,11 +8,12 @@ import { v4 as uuidv4 } from 'uuid';
 
 function TrendingNews() {
   const [news, setNews] = useState([]);
-  const info=[
-"* Top Business Headlines",
-"* Top Business Headlines",
-"* Top Business Headlines"
-  ]
+  const info={
+    headline:"Top Business Headlines"
+// "* ",
+// "* Top Business Headlines",
+// "* Top Business Headlines"
+  }
   const navigate = useNavigate();
   const defaultImage = 'https://yt3.googleusercontent.com/VbGkSvLpAmSOVxSQ-42YlR4uQjaRbADrBZ0Jbm8rpeI7RiFSEp2_8DJqzgqH4dWViwYOQy2QJnQ=s900-c-k-c0x00ffffff-no-rj';
 
@@ -43,15 +44,15 @@ function TrendingNews() {
       <h1 className="relative text-black mb-8 shadow-lg rounded-lg p-1  overflow-hidden">
   <span className="absolute inset-0 bg-red-600 dark:bg-blue-600 animate-pulse opacity-75 rounded-lg"></span>
   {/* <Marquee velocity={25}> */}
-  <span className="relative">
+  <span className="relative">{info.headline.toUpperCase()}
   {/* <Marquee>{info.toUpperCase()}</Marquee></span> */}
-  <Marquee velocity={150}>
+  {/* <Marquee velocity={150}>
         {info.map((headline) => (
           <div key={uuidv4()} style={{ padding: '0 10px' }}>
             {headline}
           </div>
         ))}
-      </Marquee>
+      </Marquee> */}
       </span>
   {/* </Marquee> */}
 </h1>
