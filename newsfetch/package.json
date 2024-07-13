@@ -24,8 +24,10 @@
     "react-marquee-slider": "^1.1.5",
     "react-router": "^6.24.0",
     "react-router-dom": "^6.24.0",
+    "react-slick": "^0.30.2",
     "react-tilty": "^3.0.0",
     "react-tsparticles": "^2.12.2",
+    "slick-carousel": "^1.8.1",
     "uuid": "^10.0.0"
   },
   "devDependencies": {

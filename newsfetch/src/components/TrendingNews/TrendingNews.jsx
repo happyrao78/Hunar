@@ -3,6 +3,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import Marquee from 'react-marquee-slider';
 import { v4 as uuidv4 } from 'uuid';
+// import Slider from '../Slider/Carousel';
+import Carousel from '../Slider/Carousel';
 
 
 
@@ -38,6 +40,7 @@ function TrendingNews() {
   }
 
   return (
+    <>
     <div className="p-5 bg-gray-200  text-center text-5xl mx-auto flex flex-col items-center">
       {/* <h1 className="text-black mb-8 bg-red-400 shadow-lg rounded-lg p-4 animate-pulse  opacity-100"
       >{info.headline.toUpperCase()}</h1> */}
@@ -82,11 +85,19 @@ function TrendingNews() {
                   Read Full Article
                 </button>
               </div>
+              
             </div>
+            
+            
           ))}
+         
         </div>
+      
       </div>
+      <Carousel />
     </div>
+   
+    </>
   );
 }
 
