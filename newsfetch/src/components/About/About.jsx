@@ -20,7 +20,7 @@ const About = () => {
             style={{ display: 'block', margin: '0 auto' }}
           />
         </div>
-        <p className='text-2xl font-semibold text-center'>{data.name.toUpperCase()}</p>
+        <p className='text-2xl font-semibold text-center'>{data.name}</p>
         <p className='text-xl text-gray-600 dark:text-gray-200 text-center'>{data.location}</p>
        <div className='flex justify-center items-center '>
        <a href='https://www.github.com/happyrao78'>
@@ -42,6 +42,10 @@ const About = () => {
 export default About
 
 export const githubInfoLoader = async () => {
-  const response = await fetch('https://api.github.com/users/happyrao78')
+  const response = await fetch('https://api.github.com/users/happyrao78',{
+    headers:{
+      'Authorization': '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'
+    }
+  })
   return response.json()
 }

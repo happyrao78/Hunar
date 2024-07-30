@@ -7,27 +7,27 @@ const Carousel = () => {
   const data = [
     {
       name: "Happy Yadav",
-      img: "https://media.licdn.com/dms/image/D5603AQHzjtCU68xU9Q/profile-displayphoto-shrink_800_800/0/1720096451083?e=1726099200&v=beta&t=z9RxI4dav0cZBu-19CpEwGAqdHzYap_cdSre1zba5lc",
+      img: "https://media.licdn.com/dms/image/D5603AQE06CRD5GXoJA/profile-displayphoto-shrink_400_400/0/1721996295616?e=1727913600&v=beta&t=vtopIXJjZvY8HpZvHSqjxnUkgAaSfmKE3cMKZ4UOW2Q",
       review: "TBD",
     },
     {
       name: "Happy Yadav",
-      img: "https://media.licdn.com/dms/image/D5603AQHzjtCU68xU9Q/profile-displayphoto-shrink_800_800/0/1720096451083?e=1726099200&v=beta&t=z9RxI4dav0cZBu-19CpEwGAqdHzYap_cdSre1zba5lc",
+      img: "https://media.licdn.com/dms/image/D5603AQE06CRD5GXoJA/profile-displayphoto-shrink_400_400/0/1721996295616?e=1727913600&v=beta&t=vtopIXJjZvY8HpZvHSqjxnUkgAaSfmKE3cMKZ4UOW2Q",
       review: "TBD",
     },
     {
       name: "Happy Yadav",
-      img: "https://media.licdn.com/dms/image/D5603AQHzjtCU68xU9Q/profile-displayphoto-shrink_800_800/0/1720096451083?e=1726099200&v=beta&t=z9RxI4dav0cZBu-19CpEwGAqdHzYap_cdSre1zba5lc",
+      img: "https://media.licdn.com/dms/image/D5603AQE06CRD5GXoJA/profile-displayphoto-shrink_400_400/0/1721996295616?e=1727913600&v=beta&t=vtopIXJjZvY8HpZvHSqjxnUkgAaSfmKE3cMKZ4UOW2Q",
       review: "TBD",
     },
     {
       name: "Happy Yadav",
-      img: "https://media.licdn.com/dms/image/D5603AQHzjtCU68xU9Q/profile-displayphoto-shrink_800_800/0/1720096451083?e=1726099200&v=beta&t=z9RxI4dav0cZBu-19CpEwGAqdHzYap_cdSre1zba5lc",
+      img: "https://media.licdn.com/dms/image/D5603AQE06CRD5GXoJA/profile-displayphoto-shrink_400_400/0/1721996295616?e=1727913600&v=beta&t=vtopIXJjZvY8HpZvHSqjxnUkgAaSfmKE3cMKZ4UOW2Q",
       review: "TBD",
     },
     {
       name: "Happy Yadav",
-      img: "https://media.licdn.com/dms/image/D5603AQHzjtCU68xU9Q/profile-displayphoto-shrink_800_800/0/1720096451083?e=1726099200&v=beta&t=z9RxI4dav0cZBu-19CpEwGAqdHzYap_cdSre1zba5lc",
+      img: "https://media.licdn.com/dms/image/D5603AQE06CRD5GXoJA/profile-displayphoto-shrink_400_400/0/1721996295616?e=1727913600&v=beta&t=vtopIXJjZvY8HpZvHSqjxnUkgAaSfmKE3cMKZ4UOW2Q",
       review: "TBD",
     },
   ];
