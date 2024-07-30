@@ -44,7 +44,7 @@ export default About
 export const githubInfoLoader = async () => {
   const response = await fetch('https://api.github.com/users/happyrao78',{
     headers:{
-      'Authorization': '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'
+      'Authorization': import.meta.env.VITE_GITHUB_ACCESS_TOKEN
     }
   })
   return response.json()
