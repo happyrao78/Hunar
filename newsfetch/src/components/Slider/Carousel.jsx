@@ -7,27 +7,27 @@ const Carousel = () => {
   const data = [
     {
       name: "Happy Yadav",
-      img: "https://media.licdn.com/dms/image/D5603AQE06CRD5GXoJA/profile-displayphoto-shrink_400_400/0/1721996295616?e=1727913600&v=beta&t=vtopIXJjZvY8HpZvHSqjxnUkgAaSfmKE3cMKZ4UOW2Q",
+      img: "https://media.licdn.com/dms/image/v2/D5603AQGllvkLtBTfOQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723833568484?e=1730332800&v=beta&t=eQqBIqDsSafIqdBWZmfvzytO_I1HZkYNbGSm-JcFSac",
       review: "TBD",
     },
     {
       name: "Happy Yadav",
-      img: "https://media.licdn.com/dms/image/D5603AQE06CRD5GXoJA/profile-displayphoto-shrink_400_400/0/1721996295616?e=1727913600&v=beta&t=vtopIXJjZvY8HpZvHSqjxnUkgAaSfmKE3cMKZ4UOW2Q",
+      img: "https://media.licdn.com/dms/image/v2/D5603AQGllvkLtBTfOQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723833568484?e=1730332800&v=beta&t=eQqBIqDsSafIqdBWZmfvzytO_I1HZkYNbGSm-JcFSac",
       review: "TBD",
     },
     {
       name: "Happy Yadav",
-      img: "https://media.licdn.com/dms/image/D5603AQE06CRD5GXoJA/profile-displayphoto-shrink_400_400/0/1721996295616?e=1727913600&v=beta&t=vtopIXJjZvY8HpZvHSqjxnUkgAaSfmKE3cMKZ4UOW2Q",
+      img: "https://media.licdn.com/dms/image/v2/D5603AQGllvkLtBTfOQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723833568484?e=1730332800&v=beta&t=eQqBIqDsSafIqdBWZmfvzytO_I1HZkYNbGSm-JcFSac",
       review: "TBD",
     },
     {
       name: "Happy Yadav",
-      img: "https://media.licdn.com/dms/image/D5603AQE06CRD5GXoJA/profile-displayphoto-shrink_400_400/0/1721996295616?e=1727913600&v=beta&t=vtopIXJjZvY8HpZvHSqjxnUkgAaSfmKE3cMKZ4UOW2Q",
+      img: "https://media.licdn.com/dms/image/v2/D5603AQGllvkLtBTfOQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723833568484?e=1730332800&v=beta&t=eQqBIqDsSafIqdBWZmfvzytO_I1HZkYNbGSm-JcFSac",
       review: "TBD",
     },
     {
       name: "Happy Yadav",
-      img: "https://media.licdn.com/dms/image/D5603AQE06CRD5GXoJA/profile-displayphoto-shrink_400_400/0/1721996295616?e=1727913600&v=beta&t=vtopIXJjZvY8HpZvHSqjxnUkgAaSfmKE3cMKZ4UOW2Q",
+      img: "https://media.licdn.com/dms/image/v2/D5603AQGllvkLtBTfOQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723833568484?e=1730332800&v=beta&t=eQqBIqDsSafIqdBWZmfvzytO_I1HZkYNbGSm-JcFSac",
       review: "TBD",
     },
   ];
@@ -81,7 +81,7 @@ const Carousel = () => {
                 <div className="flex flex-col items-center justify-center gap-4 p-4">
                   <p className="text-xl font-semibold">{d.name}</p>
                   <p className="text-center">{d.review}</p>
-                  <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl">Follow</button>
+                  <button className="bg-indigo-500 text-white text-lg px-6 py-1 rounded-xl">Connect</button>
                 </div>
               </div>
             </div>
