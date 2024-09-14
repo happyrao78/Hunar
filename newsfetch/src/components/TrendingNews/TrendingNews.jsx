@@ -21,7 +21,7 @@ function TrendingNews() {
 
   useEffect(() => {
     // https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=74816c3690434f50b56a475c71cd3b56
-    axios.get(`https://backendserver-production-b03e.up.railway.app/api/news`)
+    axios.get(`https://backendserver-production-85aa.up.railway.app/api/news`)
       .then(response => {
         // console.log(response.data);
         const filteredNews = response.data.articles.filter(article => article.source.name === 'The Times of India' ||  'google-news');
