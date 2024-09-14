@@ -19,7 +19,7 @@ app.use(express.static('dist'));
 
 app.get("/api/news", (req, res) => {
   const apiKey = process.env.NEWS_API_KEY;
-  axios.get(`https://newsapi.org/v2/top-headlines?country=in&category=business&apiKey=${apiKey}`)
+  axios.get(`https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=${apiKey}`)
     .then((response) => {
       console.log('NewsAPI response:', response.data);
       res.send(response.data);
