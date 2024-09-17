@@ -20,7 +20,7 @@ const About = () => {
             style={{ display: 'block', margin: '0 auto' }}
           />
         </div>
-        <p className='text-2xl font-semibold text-center'>{data.name}</p>
+        <p className='text-3xl font-semibold text-center'>{data.name}</p>
         <p className='text-xl text-gray-600 dark:text-gray-200 text-center'>{data.location}</p>
        <div className='flex justify-center items-center '>
        <a href='https://www.github.com/happyrao78'>
