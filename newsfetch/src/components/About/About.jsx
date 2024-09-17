@@ -9,7 +9,7 @@ const About = () => {
 
   return (
     <div className='flex justify-center items-center min-h-screen bg-gray-100 p-4 '>
-      <div className='w-full max-w-sm dark:bg-gray-800 dark:text-white bg-white rounded-lg shadow-lg p-6 m-4 dark:transition ease-in-out duration-500'>
+      <div className='w-full max-w-sm dark:bg-gray-800 dark:text-white bg-white rounded-lg shadow-lg p-6 m-4 dark:transition ease-in-out duration-500 hover:translate-y-[-10px] transition-all duration-500'>
         {/* <h1 className='text-3xl font-bold mb-4 text-center'>Github Followers: {data.followers}</h1> */}
         <div className='flex justify-center mb-4'>
           <img
@@ -20,7 +20,7 @@ const About = () => {
             style={{ display: 'block', margin: '0 auto' }}
           />
         </div>
-        <p className='text-3xl font-semibold text-center'>{data.name}</p>
+        <p className='text-2xl font-semibold text-center'>{data.name}</p>
         <p className='text-xl text-gray-600 dark:text-gray-200 text-center'>{data.location}</p>
        <div className='flex justify-center items-center '>
        <a href='https://www.github.com/happyrao78'>
