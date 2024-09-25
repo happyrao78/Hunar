@@ -38,6 +38,9 @@ export default function Contact() {
     if (validationError) {
       setIsLoading(false);
       setErrorMessage(validationError);
+      setTimeout(() => {
+        setErrorMessage("");
+      }, 3000);
       return;
     }
 
@@ -59,6 +62,10 @@ export default function Contact() {
       setResult("An unexpected error occurred. Please try again later.");
     } finally {
       setIsLoading(false);
+
+      setTimeout(() => {
+        setResult("");
+      }, 3000);
     }
   };
 
@@ -119,7 +126,7 @@ export default function Contact() {
           <div className="flex justify-center">
             <button
               type="submit"
-              className={`w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${
+              className={`w-full inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-1xl font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ${
                 isLoading ? "opacity-50 cursor-not-allowed" : ""
               }`}
               disabled={isLoading}
