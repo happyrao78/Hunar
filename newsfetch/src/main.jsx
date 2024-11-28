@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom'
 import About , {githubInfoLoader}from './components/About/About'
 import TrendingNews from './components/TrendingNews/TrendingNews'
 import Contact from './components/Contact/Contact'
+import Blog from './components/Blog/Blog'
 import NewsDetail from './components/NewsDetail/NewsDetail'
 import { RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
     <Route path='newsdetail' element={<NewsDetail />} />
     <Route loader={githubInfoLoader} path='about' element={<About />} />
     <Route path='contact' element={<Contact />} />
+    <Route path='blog' element={<Blog />} />
 
       
     </Route>
