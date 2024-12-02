@@ -13,7 +13,7 @@ function TrendingNews() {
   useEffect(() => {
     setLoading(true); // Start loading
     axios
-      .get("https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=d8b88c4d740e48eb8db63549b69f230f")
+      .get("https://server-hunar-ke4eupvo1-happy-yadavs-projects.vercel.app/api/news")
       .then((response) => {
         const filteredNews = response.data.articles.filter(
           (article) =>
