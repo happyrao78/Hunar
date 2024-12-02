@@ -13,7 +13,7 @@ function TrendingNews() {
   useEffect(() => {
     setLoading(true); // Start loading
     axios
-      .get("https://server-hunar-ke4eupvo1-happy-yadavs-projects.vercel.app/api/news")
+      .get("https://backend-server-jsdp.vercel.app/api/news")
       .then((response) => {
         const filteredNews = response.data.articles.filter(
           (article) =>
