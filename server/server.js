@@ -8,7 +8,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-  origin: '*', // Allow requests from any origin
+  origin: 'https://hunar-taupe.vercel.app', // Allow requests from any origin
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   optionsSuccessStatus: 204,
 }));
